@@ -1,0 +1,9 @@
+﻿/* BUTTONS */
+
+button.button-new{
+    width: 150px;
+    height: 150px;
+    background: url(../content/img/imagedirectory/double-up-arrow.jpg);
+    background-repeat: no-repeat;
+
+}

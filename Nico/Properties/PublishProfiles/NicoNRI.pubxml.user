@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\shang\Desktop\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="aspx/About.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Agent.aspx">
+      <publishTime>12/31/2018 13:21:24</publishTime>
+    </File>
+    <File Include="aspx/Contact.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Default.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/favicon.ico">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Global.asax">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/HelloNico.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Intro.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Login.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/ProblemOne.aspx">
+      <publishTime>04/04/2017 17:02:43</publishTime>
+    </File>
+    <File Include="aspx/ProblemPage.aspx">
+      <publishTime>12/31/2018 13:56:55</publishTime>
+    </File>
+    <File Include="aspx/ProblemPageAgent.aspx">
+      <publishTime>12/31/2018 14:23:50</publishTime>
+    </File>
+    <File Include="aspx/ProblemPageAgentText.aspx">
+      <publishTime>12/31/2018 13:58:45</publishTime>
+    </File>
+    <File Include="aspx/RedirectPage.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="aspx/Register.aspx">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/Nico.dll">
+      <publishTime>01/14/2019 18:11:46</publishTime>
+    </File>
+    <File Include="bin/Nico.pdb">
+      <publishTime>01/14/2019 18:11:46</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/button1.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/agent-img.png">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/double-down-arrow.jpg">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/double-up-arrow.jpg">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/mic.png">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/nao-sit.jpg">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/img/imagedirectory/problem_one_images.txt">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/imagedirectory/robot.jpg">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/img/loading/ajax-loader.gif">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/loading/circles.gif">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/loading/coloredcircles.gif">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/img/microphone/mic-animate.gif">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="Content/img/microphone/mic-slash.gif">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="Content/img/microphone/mic.gif">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepFour.png">
+      <publishTime>04/05/2017 09:24:57</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepFour_Answered.png">
+      <publishTime>04/05/2017 09:25:33</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepOne.png">
+      <publishTime>04/05/2017 09:21:21</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepOne_Answered.png">
+      <publishTime>04/05/2017 09:27:01</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepThree.png">
+      <publishTime>04/05/2017 09:24:01</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepThree_Answered.png">
+      <publishTime>04/05/2017 09:24:28</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepTwo.png">
+      <publishTime>04/05/2017 09:23:21</publishTime>
+    </File>
+    <File Include="Content/img/problem_one/StepTwo_Answered.png">
+      <publishTime>04/05/2017 09:23:38</publishTime>
+    </File>
+    <File Include="content/img/robot/bg.png">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/robot/eyes.png">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/img/robot/mouth.png">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/loginstyle.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="content/robot_ui.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/simple-sidebar.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="Content/table1.css">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="data/agentAudio/response.wav">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="data/agentAudio/transformed.wav">
+      <publishTime>12/27/2018 14:42:32</publishTime>
+    </File>
+    <File Include="data/click.wav">
+      <publishTime>12/19/2018 00:23:44</publishTime>
+    </File>
+    <File Include="data/logs/log_SaveWav.txt">
+      <publishTime>12/31/2018 14:00:42</publishTime>
+    </File>
+    <File Include="data/transcripts/nlubold_nicoresponse-2018-10-03_04-53-29-PM.txt">
+      <publishTime>10/03/2018 16:53:33</publishTime>
+    </File>
+    <File Include="data/userAudio/blob.wav">
+      <publishTime>12/31/2018 14:00:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="GeneralInfo.txt">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/DialogueEngine.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/ErrorLogger.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/saveTranscript.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/saveWav.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/UpdateStep.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="handlers/UpdateTable.ashx">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/audio.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/download.js">
+      <publishTime>12/31/2018 13:34:54</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.map">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/jquery.signalR-2.0.0.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/jquery.signalR-2.0.0.min.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/recorder.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/recorderWorker.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="js/script.js">
+      <publishTime>12/31/2018 13:07:19</publishTime>
+    </File>
+    <File Include="js/talk.js">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/19/2018 00:23:46</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/addnoise.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/analysetoeqpreset.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/batch.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/breathiness.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/buttons.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changeduration.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changeformants.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changenote.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changepitchmedian.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changesemitones.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/changevt.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/compressor.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copydtw.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyduration.praat">
+      <publishTime>03/22/2017 12:04:14</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyeq.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyformants.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyintensity.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copymix.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copypitchcontour.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copypitchmedian.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyvocoder.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/copyvt.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/createwaveform.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/cutpauses.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/declip.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/echo.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Car Radio.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Cellular.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Film Vocal.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Glass.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Megaphone.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Phone.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Radio.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Small Radio.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Vintage Phone.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq/Walkie Talkie.Sound">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eq10bands.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eqpreset.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/eqpresetslist.txt">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/extractpitch.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/extractvowels.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/fade.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/fixdc.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/gate.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/getPitchIntRate.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/getPitchIntRate_v2.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/getPitchIntRate_v3.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/hiss.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/invertpitch.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/ireq.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/limiter.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/manipulatePitch.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/markpitch.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/marksyllables.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/maxformant.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/minmaxf0.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/monotonize.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/normalize.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/raspiness.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Ambience.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Bath.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Church.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Hall.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Plate.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Robot.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Room Big.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Room Medium.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Room Small.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Stadium.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Studio.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/reverb/Vocal.flac">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/rumble.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/setup.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/tts.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/updateeqpresetslist.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/vibratotremolo.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/vocoder.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/voicedunvoiced.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/vt.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/whisper.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/workpost.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/plugin_VocalToolkit/workpre.praat">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="praat/praatcon.exe">
+      <publishTime>03/22/2017 12:04:15</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>12/31/2018 14:19:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/31/2018 13:31:54</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

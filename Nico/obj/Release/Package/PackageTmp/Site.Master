@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="Site.master.cs" Inherits="Nico.Site"%>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    
+    <link href="~/content/bootstrap.css" rel="stylesheet" media="screen" />
+    <link href="~/content/table1.css" rel="stylesheet" media="screen" />
+    <link href="~/content/Site.css" rel="stylesheet" media="screen" />
+    <link href="~/aspx/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/js/jquery-1.9.1.js" />
+                <asp:ScriptReference Path="~/js/bootstrap.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/aspx/Agent.aspx">Welcome</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/aspx/Agent.aspx">Home</a></li>
+                        <li><a runat="server" href="~/aspx/About.aspx">About</a></li>
+                        <li><a runat="server" href="~/aspx/Contact.aspx">Contact</a></li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/aspx/Register.aspx">Register</a></li>
+                                <li><a runat="server" href="~/aspx/Login.aspx">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/aspx/Agent.aspx">Open Agent</a></li>
+                                <li><a runat="server" href="~/aspx/RedirectPage.aspx" target="_blank">Start Teaching</a></li>
+                                <li>Welcome, <asp:LoginName ID="LoginName1" runat="server" Font-Bold="true" /></li>
+                                <li><asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /></li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

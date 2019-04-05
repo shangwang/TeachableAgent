@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB7366DC-22FE-42E0-997D-1CCED5627F62}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nico</RootNamespace>
+    <AssemblyName>Nico</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aspx\Agent.aspx" />
+    <Content Include="aspx\Default.aspx" />
+    <Content Include="aspx\HelloNico.aspx" />
+    <Content Include="aspx\Intro.aspx" />
+    <Content Include="aspx\ProblemPageAgent.aspx" />
+    <Content Include="aspx\ProblemPageAgentText.aspx" />
+    <Content Include="aspx\ProblemPage.aspx" />
+    <Content Include="aspx\RedirectPage.aspx" />
+    <Content Include="content\button1.css" />
+    <Content Include="content\img\imagedirectory\agent-img.png" />
+    <Content Include="content\img\imagedirectory\double-down-arrow.jpg" />
+    <Content Include="content\img\imagedirectory\double-up-arrow.jpg" />
+    <Content Include="content\img\imagedirectory\mic.png" />
+    <Content Include="content\img\imagedirectory\nao-sit.jpg" />
+    <Content Include="content\img\imagedirectory\problem_one_images.txt" />
+    <Content Include="content\img\imagedirectory\robot.jpg" />
+    <Content Include="content\img\loading\ajax-loader.gif" />
+    <Content Include="content\img\loading\circles.gif" />
+    <Content Include="content\img\loading\coloredcircles.gif" />
+    <Content Include="content\img\robot\bg.png" />
+    <Content Include="content\img\robot\eyes.png" />
+    <Content Include="content\img\robot\mouth.png" />
+    <Content Include="content\robot_ui.css" />
+    <Content Include="content\simple-sidebar.css" />
+    <Content Include="content\Site.css" />
+    <Content Include="content\table1.css" />
+    <Content Include="data\agentAudio\response.wav" />
+    <Content Include="data\agentAudio\transformed.wav" />
+    <Content Include="data\click.wav" />
+    <Content Include="data\logs\log_SaveWav.txt" />
+    <Content Include="data\userAudio\blob.wav" />
+    <Content Include="handlers\saveWav.ashx" />
+    <Content Include="handlers\saveTranscript.ashx" />
+    <Content Include="handlers\DialogueEngine.ashx" />
+    <Content Include="handlers\UpdateTable.ashx" />
+    <Content Include="handlers\UpdateStep.ashx" />
+    <Content Include="handlers\ErrorLogger.ashx" />
+    <None Include="Properties\PublishProfiles\NicoNRI.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aspx\About.aspx" />
+    <Content Include="aspx\Contact.aspx" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.css" />
+    <Content Include="content\bootstrap.min.css" />
+    <Content Include="content\loginstyle.css" />
+    <Content Include="aspx\favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="aspx\Global.asax" />
+    <Content Include="js\audio.js" />
+    <Content Include="js\download.js" />
+    <Content Include="js\recorder.js" />
+    <Content Include="js\recorderWorker.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\talk.js" />
+    <Content Include="aspx\Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="content\bootstrap.css.map" />
+    <None Include="js\jquery-1.9.1.intellisense.js" />
+    <Content Include="aspx\Register.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.signalR-2.0.0.js" />
+    <Content Include="js\jquery.signalR-2.0.0.min.js" />
+    <Content Include="GeneralInfo.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="js\jquery-1.9.1.min.map" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspx\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Agent.aspx.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Agent.aspx.designer.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\HelloNico.aspx.cs">
+      <DependentUpon>HelloNico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\HelloNico.aspx.designer.cs">
+      <DependentUpon>HelloNico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Intro.aspx.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Intro.aspx.designer.cs">
+      <DependentUpon>Intro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\ProblemPageAgent.aspx.cs">
+      <DependentUpon>ProblemPageAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\ProblemPageAgent.aspx.designer.cs">
+      <DependentUpon>ProblemPageAgent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\ProblemPageAgentText.aspx.cs">
+      <DependentUpon>ProblemPageAgentText.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\ProblemPageAgentText.aspx.designer.cs">
+      <DependentUpon>ProblemPageAgentText.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\ProblemPage.aspx.cs">
+      <DependentUpon>ProblemPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\ProblemPage.aspx.designer.cs">
+      <DependentUpon>ProblemPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspx\RedirectPage.aspx.cs">
+      <DependentUpon>RedirectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\RedirectPage.aspx.designer.cs">
+      <DependentUpon>RedirectPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharp\functions\ConnectionMapping.cs" />
+    <Compile Include="csharp\functions\SQLAgent.cs" />
+    <Compile Include="csharp\functions\SQLLog.cs" />
+    <Compile Include="csharp\functions\SQLProblemStepTracker.cs" />
+    <Compile Include="csharp\functions\ExternalMethodsCaller.cs" />
+    <Compile Include="csharp\functions\ResponseGeneration.cs" />
+    <Compile Include="csharp\functions\SQLAnswerPattern.cs" />
+    <Compile Include="csharp\functions\SQLLogin.cs" />
+    <Compile Include="csharp\functions\SQLNicoState.cs" />
+    <Compile Include="csharp\functions\SQLProblemDesign.cs" />
+    <Compile Include="csharp\functions\SQLProblemImg.cs" />
+    <Compile Include="csharp\functions\SQLProblemText.cs" />
+    <Compile Include="csharp\functions\SQLConditionGenderInfo.cs" />
+    <Compile Include="csharp\functions\SQLUserState.cs" />
+    <Compile Include="csharp\MyHub.cs" />
+    <Compile Include="handlers\DialogueEngine.ashx.cs">
+      <DependentUpon>DialogueEngine.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\ErrorLogger.ashx.cs">
+      <DependentUpon>ErrorLogger.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\saveTranscript.ashx.cs">
+      <DependentUpon>saveTranscript.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\saveWav.ashx.cs">
+      <DependentUpon>saveWav.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\UpdateStep.ashx.cs">
+      <DependentUpon>UpdateStep.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\UpdateTable.ashx.cs">
+      <DependentUpon>UpdateTable.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="aspx\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="csharp\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\transcripts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49957</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44301/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,247 @@
+﻿body, html {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    background: url(img/robot/bg.png) no-repeat;
+    /*background-size: cover;*/
+    background-size: 530px 618px;
+    background-attachent: fixed;
+    background-position: center top;
+    min-width: 530px
+    /*-webkit-tap-highlight-color: rgb(255, 216, 0);*/
+}
+
+button.talkbutton {
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#output {
+	font-size: 2em;
+}
+
+#eyes {
+    position: absolute;
+    bottom: 0;
+    top: 230px;
+    width: 100%;
+    left: 50%;
+    margin-left: -160px;
+}
+
+
+#mouth {
+    position: absolute;
+    bottom: 0;
+    top: 240px;
+    width: 50%;
+    left: 50%;
+    margin-left: -160px;
+}
+
+
+
+
+
+#eyes {
+	background: url(img/robot/eyes.png) no-repeat;
+	height: 480px;
+	width: 290px;
+}
+
+#mouth {
+	background: url(img/robot/mouth.png) no-repeat;	
+	height: 480px;
+	width: 50%;
+}
+
+#overlay {
+	position: absolute;
+	background: rgba(0,255,0,0.5);
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	display: none;
+}
+
+#speech {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+	height: 110px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	padding: 10px;
+	font-family: verdana;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+
+.frown #eyes { background-position: -320px 0px; }
+.frown #mouth { background-position: -1284px 0; width: 320px; height: 480px; }
+
+.neutral #eyes {-webkit-animation: neutral-blink 7s infinite steps(1,end);}
+.neutral #mouth {background-position: -1284px 0; width: 320px; height: 480px;}
+
+.angry1 #eyes {-webkit-animation: angry-blink 7s infinite steps(1,end);}
+.angry1 #mouth {background-position: -1284px 0; width: 320px; height: 480px;}
+
+.angry2 #eyes {-webkit-animation: angry-blink 7s infinite steps(1,end);} /* frustration */
+.angry2 #mouth {background-position: -1926px 0; width: 320px; height: 480px;}
+
+.angry3 #eyes {-webkit-animation: angry-blink 7s infinite steps(1,end);}
+.angry3 #mouth {background-position: -2247px 0; width: 320px; height: 480px;}
+
+.sad #eyes {-webkit-animation: sad-blink 7s infinite steps(1,end);}
+.sad #mouth {background-position: -1926px 0; width: 320px; height: 480px;}
+
+.happy1 #eyes {-webkit-animation: neutral-blink 7s infinite steps(1,end);}
+.happy1 #mouth {background-position: 0 0; width: 320px; height: 480px;}
+
+.happy2 #eyes {-webkit-animation: neutral-blink 7s infinite steps(1,end);}
+.happy2 #mouth {background-position: -642px 0; width: 320px; height: 480px;}
+
+.happy3 #eyes {-webkit-animation: sad-blink 7s infinite steps(1,end);}
+.happy3 #mouth {background-position: -321px 0; width: 320px; height: 480px;}
+
+.sarcastic #eyes {-webkit-animation: angry-blink 7s infinite steps(1,end);}
+.sarcastic #mouth {background-position: -642px 0; width: 320px; height: 480px;}
+
+.happy #eyes {-webkit-animation: neutral-blink 7s infinite steps(1,end);}
+.happy #mouth {background-position: -642px 0; width: 320px; height: 480px;}
+
+.happier #eyes {-webkit-animation: sad-blink 7s infinite steps(1,end);}
+.happier #mouth {background-position: -321px 0; width: 320px; height: 480px;}
+
+.frustrated #eyes {-webkit-animation: angry-blink 7s infinite steps(1,end);} /* frustration */
+.frustrated #mouth {background-position: -1926px 0; width: 320px; height: 480px;}
+
+.sad #eyes {-webkit-animation: sad-blink 7s infinite steps(1,end);}
+.sad #mouth {background-position: -1926px 0; width: 320px; height: 480px;}
+
+.sadder #eyes {-webkit-animation: sad-blink 7s infinite steps(1,end);}
+.sadder #mouth {background-position: -1926px 0; width: 320px; height: 480px;}
+
+.talking #mouth {-webkit-animation: talking 0.3s infinite steps(1,end);}
+
+
+
+/**************
+ * ANIMATIONS *
+ **************/
+
+@-webkit-keyframes neutral-blink {
+	0% {
+		background-position: 0px 0px;		
+	}
+
+	50% {
+		background-position: -320px 0px;
+	}
+
+	52% {
+		background-position: 0px 0px;		
+	}
+
+	93% {
+		background-position: -320px 0px;
+	}
+
+	95% {
+		background-position: 0px 0px;		
+	}
+
+	97% {
+		background-position: -320px 0px;
+	}
+
+	99% {
+		background-position: 0px 0px;
+	}
+} 
+
+@-webkit-keyframes angry-blink {
+	0% {
+		background-position: -641px 0; width: 320px; height: 480px;
+	}
+
+	50% {
+		background-position: -320px 0px;
+	}
+
+	52% {
+		background-position: -641px 0; width: 320px; height: 480px;
+	}
+
+	93% {
+		background-position: -320px 0px;
+	}
+
+	95% {
+		background-position: -641px 0; width: 320px; height: 480px;
+	}
+
+	97% {
+		background-position: -320px 0px;
+	}
+
+	99% {
+		background-position: -641px 0; width: 320px; height: 480px;
+	}
+} 
+
+@-webkit-keyframes sad-blink {
+	0% {
+		background-position: -962px 0; width: 320px; height: 480px;
+	}
+
+	50% {
+		background-position: -320px 0px;
+	}
+
+	52% {
+		background-position: -962px 0; width: 320px; height: 480px;
+	}
+
+	93% {
+		background-position: -320px 0px;
+	}
+
+	95% {
+		background-position: -962px 0; width: 320px; height: 480px;
+	}
+
+	97% {
+		background-position: -320px 0px;
+	}
+
+	99% {
+		background-position: -962px 0; width: 320px; height: 480px;
+	}
+} 
+
+@-webkit-keyframes talking {
+	0% {
+		background-position: -1284px 0; width: 320px; height: 480px;
+	}
+
+	33% {
+		background-position: -1605px 0; width: 320px; height: 480px;
+	}
+
+	66% {
+		background-position: -963px 0; width: 320px; height: 480px;
+	}
+}
